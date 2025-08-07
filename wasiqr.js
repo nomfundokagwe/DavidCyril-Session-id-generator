@@ -59,21 +59,22 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
 				   let WASI_MD_TEXT = `
-*_Session Connected By FEARLESS*
+*_Session Connected_*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『 AMAZING YOU'VE CHOSEN ZENITSU CRASH V2 』*
+║ *『 AMAZING YOU'VE CHOSEN TECH-MD』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _https://www.youtube.com/@BTSMODZ
-║❒ *Owner:* https://wa.me/2348075952205_
-║❒ *Repo:* _https://github.com/Fearless-tech1_
-║❒ *WaGroup:* _https://chat.whatsapp.com/C3GFThC0tIpGaJY9DFUeCK
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VahusSh0QeaoFzHJCk2x
-║❒ *Plugins:* _https://github.com/Fearless-tech1 
+║❒ *Ytube:* _https://www.youtube.com/@
+║❒ *Owner:* https://wa.me/_
+║❒ *Repo:* _https://github.com/_
+║❒ *WaGroup:* _https://chat.whatsapp.com/
+║❒ *WaChannel:* _https://whatsapp.com/channel/
+
+║❒ *Plugins:* _https://github.com/ 
 ╚════════════════════════╝
 _____________________________________
 	
@@ -97,8 +98,7 @@ _Don't Forget To Give Star To My Repo_`
 				});
 			}
 			console.log(err);
-			await removeFile("temp/" + id);
-		}
+					}
 	}
 	return await WASI_MD_QR_CODE()
 });
